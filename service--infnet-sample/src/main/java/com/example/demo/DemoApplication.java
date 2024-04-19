@@ -12,7 +12,19 @@ public class DemoApplication {
 
     @RequestMapping("/")
     String home() {
-        return "Hello World!!";
+        String app = "<!DOCTYPE html><html><head><style>";
+        app.concat("div {background-color: #cccccc;}");
+        app.concat("h1 {text-align: center;}");
+        app.concat("p {font-family: verdana;font-size: 20px;}");
+        app.concat("</style></head><body>");
+
+        app.concat("<h1>Projeto Infnet</h1>");
+        app.concat("<div><wbr>");
+        app.concat("<p><b>Aluno: </b> Tiago Soares da Luz</p>");
+        app.concat("<p><b>Disciplina: </b>Administração de uma PaaS usando Red Hat OpenShif</p>");
+
+        app.concat("</body></html>");
+        return app;
     }
 
     public static void main(String[] args) {
