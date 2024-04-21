@@ -12,18 +12,16 @@ public class DemoApplication {
 
     @RequestMapping("/")
     String home() {
-        String app = "<!DOCTYPE html><html><head><style>";
-        app.concat("div {background-color: #cccccc;}");
-        app.concat("h1 {text-align: center;}");
-        app.concat("p {font-family: verdana;font-size: 20px;}");
-        app.concat("</style></head><body>");
-
-        app.concat("<h1>Projeto Infnet</h1>");
-        app.concat("<div><wbr>");
-        app.concat("<p><b>Aluno: </b> Tiago Soares da Luz</p>");
-        app.concat("<p><b>Disciplina: </b>Administração de uma PaaS usando Red Hat OpenShif</p>");
-
-        app.concat("</body></html>");
+        String app = "<!DOCTYPE html><html><head><style>"+
+        "div {background-color: #cccccc;}"+
+        "h1 {text-align: center;}"+
+        "p {font-family: verdana;font-size: 20px;}"+
+        "</style></head><body>"+
+        "<h1>Projeto Infnet</h1>"+
+        "<div><wbr>"+
+        "<p><b>Aluno: </b> Tiago Soares da Luz</p>"+
+        "<p><b>Disciplina: </b>Administração de uma PaaS usando Red Hat OpenShif</p><wbr>"+
+        "</body></html>";
         return app;
     }
 
