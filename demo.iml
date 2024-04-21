@@ -72,4 +72,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.2.10.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.2.10.RELEASE" level="project" />
   </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="54b58c28-f507-419a-bf1f-3191b8081010" />
+  </component>
 </module>
